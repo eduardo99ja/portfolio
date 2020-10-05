@@ -117,7 +117,9 @@
         });
       });
     } else {
-      php_email_form_submit(this_form,action,this_form.serialize());
+      this_form.find('.loading').slideUp();
+      document.location.href = "mailto:xyz@something.com"
+      
     }
     
     return true;
